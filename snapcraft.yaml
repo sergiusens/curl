@@ -5,7 +5,6 @@ version: "7.44.0"
 
 parts:
     curl:
-        type: autotools-project
         plugin: autotools
         source: http://curl.haxx.se/download/curl-7.44.0.tar.bz2
         source-type: tar
