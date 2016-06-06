@@ -3,7 +3,8 @@ summary: out of tree curl for snapcraft
 description: TBD
 version: "7.44.0"
 
-curl:
+parts:
+    curl:
         type: autotools-project
         plugin: autotools
         source: http://curl.haxx.se/download/curl-7.44.0.tar.bz2
