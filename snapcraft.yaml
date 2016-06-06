@@ -1,0 +1,21 @@
+name: curl
+summary: out of tree curl for snapcraft
+description: TBD
+version: "7.44.0"
+
+curl:
+        type: autotools-project
+        plugin: autotools
+        source: http://curl.haxx.se/download/curl-7.44.0.tar.bz2
+        source-type: tar
+        configflags:
+            - --enable-static
+            - --enable-shared
+            - --disable-manual
+        snap:
+            - -bin
+            - -lib/*.a
+            - -lib/pkgconfig
+            - -lib/*.la
+            - -include
+            - -share
